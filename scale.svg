@@ -1,0 +1,323 @@
+<svg class="chord-chart" font-size="16" height="250" preserveAspectRatio="xMidYMid mee    t" style="background: #282c34;" viewBox="0 0 900 250" width="900" xmlns="http://www.w3.org/2000/svg">
+<g class="grid" style="background: #282c34; stroke: white; stroke-linecap: round;">
+<path class="grid" d="M50,55 h825,0 M50,85 h825,0 M50,115 h825,0 M50,145 h825,0 M50,175 h825,0 M50,205 h825,0"/>
+<path class="grid" d="M93.42105,55 v150,0 M136.8421,55 v150,0 M180.26315,55 v150,0 M223.6842,55 v150,0 M267.10526,55 v150,0 M310.5263,55 v150,0 M353.94736,55 v150,0 M397.3684,55 v150,0 M440.78946,55 v150,0 M484.2105,55 v150,0 M527.6316,55 v150,0 M571.0526,55 v150,0 M614.47363,55 v150,0 M657.8947,55 v150,0 M701.3158,55 v150,0 M744.7368,55 v150,0 M788.15784,55 v150,0 M831.5789,55 v150,0 M875,55 v150,0"/>
+</g>
+<g class="text" style="font-family: Verdana; fill: white;" text-anchor="middle">
+<text class="header" dominant-baseline="middle" x="115.13158" y="227">
+1
+</text>
+<text class="header" dominant-baseline="middle" x="201.97368" y="227">
+3
+</text>
+<text class="header" dominant-baseline="middle" x="288.8158" y="227">
+5
+</text>
+<text class="header" dominant-baseline="middle" x="375.6579" y="227">
+7
+</text>
+<text class="header" dominant-baseline="middle" dx="-1" x="505.92102" y="227">
+10
+</text>
+<text class="header" dominant-baseline="middle" dx="-1" x="592.7631" y="227">
+12
+</text>
+<text class="header" dominant-baseline="middle" dx="-1" x="723.0263" y="227">
+15
+</text>
+</g>
+<g class="circle_tonic" fill="coral">
+<circle cx="71.710526" cy="205" r="8.68421"/>
+<circle cx="592.7631" cy="205" r="8.68421"/>
+<circle cx="375.6579" cy="175" r="8.68421"/>
+<circle cx="158.55263" cy="145" r="8.68421"/>
+<circle cx="679.6052" cy="145" r="8.68421"/>
+<circle cx="462.5" cy="115" r="8.68421"/>
+<circle cx="288.8158" cy="85" r="8.68421"/>
+<circle cx="809.8684" cy="85" r="8.68421"/>
+<circle cx="71.710526" cy="55" r="8.68421"/>
+<circle cx="592.7631" cy="55" r="8.68421"/>
+</g>
+<g class="circle_in_scale" fill="white">
+<circle cx="115.13158" cy="205" r="8.68421"/>
+<circle cx="245.39473" cy="205" r="8.68421"/>
+<circle cx="288.8158" cy="205" r="8.68421"/>
+<circle cx="375.6579" cy="205" r="8.68421"/>
+<circle cx="419.07892" cy="205" r="8.68421"/>
+<circle cx="505.92102" cy="205" r="8.68421"/>
+<circle cx="636.1842" cy="205" r="8.68421"/>
+<circle cx="766.4473" cy="205" r="8.68421"/>
+<circle cx="809.8684" cy="205" r="8.68421"/>
+<circle cx="71.710526" cy="175" r="8.68421"/>
+<circle cx="158.55263" cy="175" r="8.68421"/>
+<circle cx="201.97368" cy="175" r="8.68421"/>
+<circle cx="288.8158" cy="175" r="8.68421"/>
+<circle cx="419.07892" cy="175" r="8.68421"/>
+<circle cx="549.3421" cy="175" r="8.68421"/>
+<circle cx="592.7631" cy="175" r="8.68421"/>
+<circle cx="679.6052" cy="175" r="8.68421"/>
+<circle cx="723.0263" cy="175" r="8.68421"/>
+<circle cx="809.8684" cy="175" r="8.68421"/>
+<circle cx="71.710526" cy="145" r="8.68421"/>
+<circle cx="201.97368" cy="145" r="8.68421"/>
+<circle cx="332.23682" cy="145" r="8.68421"/>
+<circle cx="375.6579" cy="145" r="8.68421"/>
+<circle cx="462.5" cy="145" r="8.68421"/>
+<circle cx="505.92102" cy="145" r="8.68421"/>
+<circle cx="592.7631" cy="145" r="8.68421"/>
+<circle cx="723.0263" cy="145" r="8.68421"/>
+<circle cx="853.2894" cy="145" r="8.68421"/>
+<circle cx="115.13158" cy="115" r="8.68421"/>
+<circle cx="158.55263" cy="115" r="8.68421"/>
+<circle cx="245.39473" cy="115" r="8.68421"/>
+<circle cx="288.8158" cy="115" r="8.68421"/>
+<circle cx="375.6579" cy="115" r="8.68421"/>
+<circle cx="505.92102" cy="115" r="8.68421"/>
+<circle cx="636.1842" cy="115" r="8.68421"/>
+<circle cx="679.6052" cy="115" r="8.68421"/>
+<circle cx="766.4473" cy="115" r="8.68421"/>
+<circle cx="809.8684" cy="115" r="8.68421"/>
+<circle cx="71.710526" cy="85" r="8.68421"/>
+<circle cx="115.13158" cy="85" r="8.68421"/>
+<circle cx="201.97368" cy="85" r="8.68421"/>
+<circle cx="332.23682" cy="85" r="8.68421"/>
+<circle cx="462.5" cy="85" r="8.68421"/>
+<circle cx="505.92102" cy="85" r="8.68421"/>
+<circle cx="592.7631" cy="85" r="8.68421"/>
+<circle cx="636.1842" cy="85" r="8.68421"/>
+<circle cx="723.0263" cy="85" r="8.68421"/>
+<circle cx="853.2894" cy="85" r="8.68421"/>
+<circle cx="115.13158" cy="55" r="8.68421"/>
+<circle cx="245.39473" cy="55" r="8.68421"/>
+<circle cx="288.8158" cy="55" r="8.68421"/>
+<circle cx="375.6579" cy="55" r="8.68421"/>
+<circle cx="419.07892" cy="55" r="8.68421"/>
+<circle cx="505.92102" cy="55" r="8.68421"/>
+<circle cx="636.1842" cy="55" r="8.68421"/>
+<circle cx="766.4473" cy="55" r="8.68421"/>
+<circle cx="809.8684" cy="55" r="8.68421"/>
+</g>
+<g class="text_circle" fill="#282c34" font-size="9" style="font-family: Verdana;" text-anchor="middle">
+<text dominant-baseline="middle" x="71.710526" y="205">
+E
+</text>
+<text dominant-baseline="middle" x="115.13158" y="205">
+F
+</text>
+<text dominant-baseline="middle" dx="-1" x="245.39473" y="205">
+G#
+</text>
+<text dominant-baseline="middle" x="288.8158" y="205">
+A
+</text>
+<text dominant-baseline="middle" x="375.6579" y="205">
+B
+</text>
+<text dominant-baseline="middle" x="419.07892" y="205">
+C
+</text>
+<text dominant-baseline="middle" x="505.92102" y="205">
+D
+</text>
+<text dominant-baseline="middle" x="592.7631" y="205">
+E
+</text>
+<text dominant-baseline="middle" x="636.1842" y="205">
+F
+</text>
+<text dominant-baseline="middle" dx="-1" x="766.4473" y="205">
+G#
+</text>
+<text dominant-baseline="middle" x="809.8684" y="205">
+A
+</text>
+<text dominant-baseline="middle" x="71.710526" y="175">
+A
+</text>
+<text dominant-baseline="middle" x="158.55263" y="175">
+B
+</text>
+<text dominant-baseline="middle" x="201.97368" y="175">
+C
+</text>
+<text dominant-baseline="middle" x="288.8158" y="175">
+D
+</text>
+<text dominant-baseline="middle" x="375.6579" y="175">
+E
+</text>
+<text dominant-baseline="middle" x="419.07892" y="175">
+F
+</text>
+<text dominant-baseline="middle" dx="-1" x="549.3421" y="175">
+G#
+</text>
+<text dominant-baseline="middle" x="592.7631" y="175">
+A
+</text>
+<text dominant-baseline="middle" x="679.6052" y="175">
+B
+</text>
+<text dominant-baseline="middle" x="723.0263" y="175">
+C
+</text>
+<text dominant-baseline="middle" x="809.8684" y="175">
+D
+</text>
+<text dominant-baseline="middle" x="71.710526" y="145">
+D
+</text>
+<text dominant-baseline="middle" x="158.55263" y="145">
+E
+</text>
+<text dominant-baseline="middle" x="201.97368" y="145">
+F
+</text>
+<text dominant-baseline="middle" dx="-1" x="332.23682" y="145">
+G#
+</text>
+<text dominant-baseline="middle" x="375.6579" y="145">
+A
+</text>
+<text dominant-baseline="middle" x="462.5" y="145">
+B
+</text>
+<text dominant-baseline="middle" x="505.92102" y="145">
+C
+</text>
+<text dominant-baseline="middle" x="592.7631" y="145">
+D
+</text>
+<text dominant-baseline="middle" x="679.6052" y="145">
+E
+</text>
+<text dominant-baseline="middle" x="723.0263" y="145">
+F
+</text>
+<text dominant-baseline="middle" dx="-1" x="853.2894" y="145">
+G#
+</text>
+<text dominant-baseline="middle" dx="-1" x="115.13158" y="115">
+G#
+</text>
+<text dominant-baseline="middle" x="158.55263" y="115">
+A
+</text>
+<text dominant-baseline="middle" x="245.39473" y="115">
+B
+</text>
+<text dominant-baseline="middle" x="288.8158" y="115">
+C
+</text>
+<text dominant-baseline="middle" x="375.6579" y="115">
+D
+</text>
+<text dominant-baseline="middle" x="462.5" y="115">
+E
+</text>
+<text dominant-baseline="middle" x="505.92102" y="115">
+F
+</text>
+<text dominant-baseline="middle" dx="-1" x="636.1842" y="115">
+G#
+</text>
+<text dominant-baseline="middle" x="679.6052" y="115">
+A
+</text>
+<text dominant-baseline="middle" x="766.4473" y="115">
+B
+</text>
+<text dominant-baseline="middle" x="809.8684" y="115">
+C
+</text>
+<text dominant-baseline="middle" x="71.710526" y="85">
+B
+</text>
+<text dominant-baseline="middle" x="115.13158" y="85">
+C
+</text>
+<text dominant-baseline="middle" x="201.97368" y="85">
+D
+</text>
+<text dominant-baseline="middle" x="288.8158" y="85">
+E
+</text>
+<text dominant-baseline="middle" x="332.23682" y="85">
+F
+</text>
+<text dominant-baseline="middle" dx="-1" x="462.5" y="85">
+G#
+</text>
+<text dominant-baseline="middle" x="505.92102" y="85">
+A
+</text>
+<text dominant-baseline="middle" x="592.7631" y="85">
+B
+</text>
+<text dominant-baseline="middle" x="636.1842" y="85">
+C
+</text>
+<text dominant-baseline="middle" x="723.0263" y="85">
+D
+</text>
+<text dominant-baseline="middle" x="809.8684" y="85">
+E
+</text>
+<text dominant-baseline="middle" x="853.2894" y="85">
+F
+</text>
+<text dominant-baseline="middle" x="71.710526" y="55">
+E
+</text>
+<text dominant-baseline="middle" x="115.13158" y="55">
+F
+</text>
+<text dominant-baseline="middle" dx="-1" x="245.39473" y="55">
+G#
+</text>
+<text dominant-baseline="middle" x="288.8158" y="55">
+A
+</text>
+<text dominant-baseline="middle" x="375.6579" y="55">
+B
+</text>
+<text dominant-baseline="middle" x="419.07892" y="55">
+C
+</text>
+<text dominant-baseline="middle" x="505.92102" y="55">
+D
+</text>
+<text dominant-baseline="middle" x="592.7631" y="55">
+E
+</text>
+<text dominant-baseline="middle" x="636.1842" y="55">
+F
+</text>
+<text dominant-baseline="middle" dx="-1" x="766.4473" y="55">
+G#
+</text>
+<text dominant-baseline="middle" x="809.8684" y="55">
+A
+</text>
+</g>
+<g class="text_circle" style="font-family: Verdana; fill: white;" text-anchor="middle">
+<text dominant-baseline="middle" x="25" y="205">
+E
+</text>
+<text dominant-baseline="middle" x="25" y="175">
+A
+</text>
+<text dominant-baseline="middle" x="25" y="145">
+D
+</text>
+<text dominant-baseline="middle" x="25" y="115">
+G
+</text>
+<text dominant-baseline="middle" x="25" y="85">
+B
+</text>
+<text dominant-baseline="middle" x="25" y="55">
+E
+</text>
+</g>
+</svg>
