@@ -26,6 +26,29 @@ pub struct Note {
     pub staff_position: StaffPosition,
 }
 
+pub trait TraitGenerate {
+    fn data_name(&self) -> &str;
+}
+
+impl TraitGenerate for Note {
+    fn data_name(&self) -> &str {
+        match self.pitch_class {
+            PitchClass::C => "c",
+            PitchClass::CSharp => "c_sharp",
+            PitchClass::D => "d",
+            PitchClass::DSharp => "d_sharp",
+            PitchClass::E => "e",
+            PitchClass::F => "f",
+            PitchClass::FSharp => "f_sharp",
+            PitchClass::G => "g",
+            PitchClass::GSharp => "g_sharp",
+            PitchClass::A => "a",
+            PitchClass::ASharp => "a_sharp",
+            PitchClass::B => "b"
+        }
+    }
+}
+
 pub trait TraitNoteSemitones {
     /// Get all possibility for a note
     fn from_semitones(semitones: Semitones) -> Self;

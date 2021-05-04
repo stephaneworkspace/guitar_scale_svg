@@ -1,0 +1,363 @@
+<svg class="chord-chart" font-size="16" height="250" preserveAspectRatio="xMidYMid mee    t" style="background: white;" viewBox="0 0 900 250" width="900" xmlns="http://www.w3.org/2000/svg">
+<g class="grid" style="background: white; stroke: black; stroke-linecap: round;">
+<path class="grid" d="M50,55 h825,0 M50,85 h825,0 M50,115 h825,0 M50,145 h825,0 M50,175 h825,0 M50,205 h825,0"/>
+<path class="grid" d="M93.42105,55 v150,0 M136.8421,55 v150,0 M180.26315,55 v150,0 M223.6842,55 v150,0 M267.10526,55 v150,0 M310.5263,55 v150,0 M353.94736,55 v150,0 M397.3684,55 v150,0 M440.78946,55 v150,0 M484.2105,55 v150,0 M527.6316,55 v150,0 M571.0526,55 v150,0 M614.47363,55 v150,0 M657.8947,55 v150,0 M701.3158,55 v150,0 M744.7368,55 v150,0 M788.15784,55 v150,0 M831.5789,55 v150,0 M875,55 v150,0"/>
+</g>
+<g class="text" style="font-family: Verdana; fill: black" text-anchor="middle">
+<text class="header" dominant-baseline="middle" x="111.63158" y="230">
+1
+</text>
+<text class="header" dominant-baseline="middle" x="198.47368" y="230">
+3
+</text>
+<text class="header" dominant-baseline="middle" x="285.3158" y="230">
+5
+</text>
+<text class="header" dominant-baseline="middle" x="372.1579" y="230">
+7
+</text>
+<text class="header" dominant-baseline="middle" dx="-1" x="502.42102" y="230">
+10
+</text>
+<text class="header" dominant-baseline="middle" dx="-1" x="589.2631" y="230">
+12
+</text>
+<text class="header" dominant-baseline="middle" dx="-1" x="719.5263" y="230">
+15
+</text>
+</g>
+<g class="circle_tonic" fill="coral">
+<circle cx="115.13158" cy="205" r="8.68421"/>
+<circle cx="636.1842" cy="205" r="8.68421"/>
+<circle cx="419.07892" cy="175" r="8.68421"/>
+<circle cx="201.97368" cy="145" r="8.68421"/>
+<circle cx="723.0263" cy="145" r="8.68421"/>
+<circle cx="505.92102" cy="115" r="8.68421"/>
+<circle cx="332.23682" cy="85" r="8.68421"/>
+<circle cx="853.2894" cy="85" r="8.68421"/>
+<circle cx="115.13158" cy="55" r="8.68421"/>
+<circle cx="636.1842" cy="55" r="8.68421"/>
+</g>
+<g class="circle_in_scale" fill="black">
+<circle cx="71.710526" cy="205" r="8.68421"/>
+<circle cx="201.97368" cy="205" r="8.68421"/>
+<circle cx="288.8158" cy="205" r="8.68421"/>
+<circle cx="332.23682" cy="205" r="8.68421"/>
+<circle cx="375.6579" cy="205" r="8.68421"/>
+<circle cx="462.5" cy="205" r="8.68421"/>
+<circle cx="549.3421" cy="205" r="8.68421"/>
+<circle cx="592.7631" cy="205" r="8.68421"/>
+<circle cx="723.0263" cy="205" r="8.68421"/>
+<circle cx="809.8684" cy="205" r="8.68421"/>
+<circle cx="853.2894" cy="205" r="8.68421"/>
+<circle cx="71.710526" cy="175" r="8.68421"/>
+<circle cx="115.13158" cy="175" r="8.68421"/>
+<circle cx="158.55263" cy="175" r="8.68421"/>
+<circle cx="245.39473" cy="175" r="8.68421"/>
+<circle cx="332.23682" cy="175" r="8.68421"/>
+<circle cx="375.6579" cy="175" r="8.68421"/>
+<circle cx="505.92102" cy="175" r="8.68421"/>
+<circle cx="592.7631" cy="175" r="8.68421"/>
+<circle cx="636.1842" cy="175" r="8.68421"/>
+<circle cx="679.6052" cy="175" r="8.68421"/>
+<circle cx="766.4473" cy="175" r="8.68421"/>
+<circle cx="853.2894" cy="175" r="8.68421"/>
+<circle cx="115.13158" cy="145" r="8.68421"/>
+<circle cx="158.55263" cy="145" r="8.68421"/>
+<circle cx="288.8158" cy="145" r="8.68421"/>
+<circle cx="375.6579" cy="145" r="8.68421"/>
+<circle cx="419.07892" cy="145" r="8.68421"/>
+<circle cx="462.5" cy="145" r="8.68421"/>
+<circle cx="549.3421" cy="145" r="8.68421"/>
+<circle cx="636.1842" cy="145" r="8.68421"/>
+<circle cx="679.6052" cy="145" r="8.68421"/>
+<circle cx="809.8684" cy="145" r="8.68421"/>
+<circle cx="71.710526" cy="115" r="8.68421"/>
+<circle cx="158.55263" cy="115" r="8.68421"/>
+<circle cx="201.97368" cy="115" r="8.68421"/>
+<circle cx="245.39473" cy="115" r="8.68421"/>
+<circle cx="332.23682" cy="115" r="8.68421"/>
+<circle cx="419.07892" cy="115" r="8.68421"/>
+<circle cx="462.5" cy="115" r="8.68421"/>
+<circle cx="592.7631" cy="115" r="8.68421"/>
+<circle cx="679.6052" cy="115" r="8.68421"/>
+<circle cx="723.0263" cy="115" r="8.68421"/>
+<circle cx="766.4473" cy="115" r="8.68421"/>
+<circle cx="853.2894" cy="115" r="8.68421"/>
+<circle cx="71.710526" cy="85" r="8.68421"/>
+<circle cx="158.55263" cy="85" r="8.68421"/>
+<circle cx="245.39473" cy="85" r="8.68421"/>
+<circle cx="288.8158" cy="85" r="8.68421"/>
+<circle cx="419.07892" cy="85" r="8.68421"/>
+<circle cx="505.92102" cy="85" r="8.68421"/>
+<circle cx="549.3421" cy="85" r="8.68421"/>
+<circle cx="592.7631" cy="85" r="8.68421"/>
+<circle cx="679.6052" cy="85" r="8.68421"/>
+<circle cx="766.4473" cy="85" r="8.68421"/>
+<circle cx="809.8684" cy="85" r="8.68421"/>
+<circle cx="71.710526" cy="55" r="8.68421"/>
+<circle cx="201.97368" cy="55" r="8.68421"/>
+<circle cx="288.8158" cy="55" r="8.68421"/>
+<circle cx="332.23682" cy="55" r="8.68421"/>
+<circle cx="375.6579" cy="55" r="8.68421"/>
+<circle cx="462.5" cy="55" r="8.68421"/>
+<circle cx="549.3421" cy="55" r="8.68421"/>
+<circle cx="592.7631" cy="55" r="8.68421"/>
+<circle cx="723.0263" cy="55" r="8.68421"/>
+<circle cx="809.8684" cy="55" r="8.68421"/>
+<circle cx="853.2894" cy="55" r="8.68421"/>
+</g>
+<g class="text_circle" fill="white" font-size="9" style="font-family: Verdana;" text-anchor="middle">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="68.210526" y="208">
+E
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="111.63158" y="208">
+F
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="198.47368" y="208">
+G
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="285.3158" y="208">
+A
+</text>
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: white" x="328.73682" y="208">
+A#
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="372.1579" y="208">
+B
+</text>
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: white" x="459" y="208">
+C#
+</text>
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: white" x="545.8421" y="208">
+D#
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="589.2631" y="208">
+E
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="632.6842" y="208">
+F
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="719.5263" y="208">
+G
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="806.3684" y="208">
+A
+</text>
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: white" x="849.7894" y="208">
+A#
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="68.210526" y="178">
+A
+</text>
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: white" x="111.63158" y="178">
+A#
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="155.05263" y="178">
+B
+</text>
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: white" x="241.89473" y="178">
+C#
+</text>
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: white" x="328.73682" y="178">
+D#
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="372.1579" y="178">
+E
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="415.57892" y="178">
+F
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="502.42102" y="178">
+G
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="589.2631" y="178">
+A
+</text>
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: white" x="632.6842" y="178">
+A#
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="676.1052" y="178">
+B
+</text>
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: white" x="762.9473" y="178">
+C#
+</text>
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: white" x="849.7894" y="178">
+D#
+</text>
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: white" x="111.63158" y="148">
+D#
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="155.05263" y="148">
+E
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="198.47368" y="148">
+F
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="285.3158" y="148">
+G
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="372.1579" y="148">
+A
+</text>
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: white" x="415.57892" y="148">
+A#
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="459" y="148">
+B
+</text>
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: white" x="545.8421" y="148">
+C#
+</text>
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: white" x="632.6842" y="148">
+D#
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="676.1052" y="148">
+E
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="719.5263" y="148">
+F
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="806.3684" y="148">
+G
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="68.210526" y="118">
+G
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="155.05263" y="118">
+A
+</text>
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: white" x="198.47368" y="118">
+A#
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="241.89473" y="118">
+B
+</text>
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: white" x="328.73682" y="118">
+C#
+</text>
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: white" x="415.57892" y="118">
+D#
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="459" y="118">
+E
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="502.42102" y="118">
+F
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="589.2631" y="118">
+G
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="676.1052" y="118">
+A
+</text>
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: white" x="719.5263" y="118">
+A#
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="762.9473" y="118">
+B
+</text>
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: white" x="849.7894" y="118">
+C#
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="68.210526" y="88">
+B
+</text>
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: white" x="155.05263" y="88">
+C#
+</text>
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: white" x="241.89473" y="88">
+D#
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="285.3158" y="88">
+E
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="328.73682" y="88">
+F
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="415.57892" y="88">
+G
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="502.42102" y="88">
+A
+</text>
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: white" x="545.8421" y="88">
+A#
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="589.2631" y="88">
+B
+</text>
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: white" x="676.1052" y="88">
+C#
+</text>
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: white" x="762.9473" y="88">
+D#
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="806.3684" y="88">
+E
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="849.7894" y="88">
+F
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="68.210526" y="58">
+E
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="111.63158" y="58">
+F
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="198.47368" y="58">
+G
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="285.3158" y="58">
+A
+</text>
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: white" x="328.73682" y="58">
+A#
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="372.1579" y="58">
+B
+</text>
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: white" x="459" y="58">
+C#
+</text>
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: white" x="545.8421" y="58">
+D#
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="589.2631" y="58">
+E
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="632.6842" y="58">
+F
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="719.5263" y="58">
+G
+</text>
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white" x="806.3684" y="58">
+A
+</text>
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: white" x="849.7894" y="58">
+A#
+</text>
+</g>
+<g class="text_circle" style="font-family: Verdana; fill: black;" text-anchor="middle">
+<text dominant-baseline="middle" x="25" y="205">
+E
+</text>
+<text dominant-baseline="middle" x="25" y="175">
+A
+</text>
+<text dominant-baseline="middle" x="25" y="145">
+D
+</text>
+<text dominant-baseline="middle" x="25" y="115">
+G
+</text>
+<text dominant-baseline="middle" x="25" y="85">
+B
+</text>
+<text dominant-baseline="middle" x="25" y="55">
+E
+</text>
+</g>
+</svg>
