@@ -4,25 +4,25 @@
 <path class="grid" d="M93.42105,55 v150,0 M136.8421,55 v150,0 M180.26315,55 v150,0 M223.6842,55 v150,0 M267.10526,55 v150,0 M310.5263,55 v150,0 M353.94736,55 v150,0 M397.3684,55 v150,0 M440.78946,55 v150,0 M484.2105,55 v150,0 M527.6316,55 v150,0 M571.0526,55 v150,0 M614.47363,55 v150,0 M657.8947,55 v150,0 M701.3158,55 v150,0 M744.7368,55 v150,0 M788.15784,55 v150,0 M831.5789,55 v150,0 M875,55 v150,0"/>
 </g>
 <g class="text" style="font-family: Verdana; fill: white" text-anchor="middle">
-<text class="header" dominant-baseline="middle" x="111.63158" y="230">
+<text class="header" dominant-baseline="middle" style="font-family: Verdana; fill: white" x="111.63158" y="230">
 1
 </text>
-<text class="header" dominant-baseline="middle" x="198.47368" y="230">
+<text class="header" dominant-baseline="middle" style="font-family: Verdana; fill: white" x="198.47368" y="230">
 3
 </text>
-<text class="header" dominant-baseline="middle" x="285.3158" y="230">
+<text class="header" dominant-baseline="middle" style="font-family: Verdana; fill: white" x="285.3158" y="230">
 5
 </text>
-<text class="header" dominant-baseline="middle" x="372.1579" y="230">
+<text class="header" dominant-baseline="middle" style="font-family: Verdana; fill: white" x="372.1579" y="230">
 7
 </text>
-<text class="header" dominant-baseline="middle" dx="-1" x="502.42102" y="230">
+<text class="header" dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: white" x="502.42102" y="230">
 10
 </text>
-<text class="header" dominant-baseline="middle" dx="-1" x="589.2631" y="230">
+<text class="header" dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: white" x="589.2631" y="230">
 12
 </text>
-<text class="header" dominant-baseline="middle" dx="-1" x="719.5263" y="230">
+<text class="header" dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: white" x="719.5263" y="230">
 15
 </text>
 </g>
@@ -116,283 +116,283 @@
 <circle cx="766.4473" cy="55" r="8.68421"/>
 <circle cx="809.8684" cy="55" r="8.68421"/>
 </g>
-<g class="text_circle" fill="dark" font-size="9" style="font-family: Verdana;" text-anchor="middle">
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="68.210526" y="208">
+<g class="text_circle" fill="black" font-size="9" style="font-family: Verdana;" text-anchor="middle">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="68.210526" y="208">
 E
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="111.63158" y="208">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="111.63158" y="208">
 F
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="198.47368" y="208">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="198.47368" y="208">
 G
 </text>
-<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: dark" x="241.89473" y="208">
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: black" x="241.89473" y="208">
 G#
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="285.3158" y="208">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="285.3158" y="208">
 A
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="372.1579" y="208">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="372.1579" y="208">
 B
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="415.57892" y="208">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="415.57892" y="208">
 C
 </text>
-<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: dark" x="459" y="208">
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: black" x="459" y="208">
 C#
 </text>
-<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: dark" x="545.8421" y="208">
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: black" x="545.8421" y="208">
 D#
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="589.2631" y="208">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="589.2631" y="208">
 E
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="632.6842" y="208">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="632.6842" y="208">
 F
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="719.5263" y="208">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="719.5263" y="208">
 G
 </text>
-<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: dark" x="762.9473" y="208">
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: black" x="762.9473" y="208">
 G#
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="806.3684" y="208">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="806.3684" y="208">
 A
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="68.210526" y="178">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="68.210526" y="178">
 A
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="155.05263" y="178">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="155.05263" y="178">
 B
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="198.47368" y="178">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="198.47368" y="178">
 C
 </text>
-<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: dark" x="241.89473" y="178">
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: black" x="241.89473" y="178">
 C#
 </text>
-<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: dark" x="328.73682" y="178">
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: black" x="328.73682" y="178">
 D#
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="372.1579" y="178">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="372.1579" y="178">
 E
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="415.57892" y="178">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="415.57892" y="178">
 F
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="502.42102" y="178">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="502.42102" y="178">
 G
 </text>
-<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: dark" x="545.8421" y="178">
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: black" x="545.8421" y="178">
 G#
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="589.2631" y="178">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="589.2631" y="178">
 A
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="676.1052" y="178">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="676.1052" y="178">
 B
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="719.5263" y="178">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="719.5263" y="178">
 C
 </text>
-<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: dark" x="762.9473" y="178">
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: black" x="762.9473" y="178">
 C#
 </text>
-<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: dark" x="849.7894" y="178">
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: black" x="849.7894" y="178">
 D#
 </text>
-<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: dark" x="111.63158" y="148">
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: black" x="111.63158" y="148">
 D#
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="155.05263" y="148">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="155.05263" y="148">
 E
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="198.47368" y="148">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="198.47368" y="148">
 F
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="285.3158" y="148">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="285.3158" y="148">
 G
 </text>
-<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: dark" x="328.73682" y="148">
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: black" x="328.73682" y="148">
 G#
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="372.1579" y="148">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="372.1579" y="148">
 A
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="459" y="148">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="459" y="148">
 B
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="502.42102" y="148">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="502.42102" y="148">
 C
 </text>
-<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: dark" x="545.8421" y="148">
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: black" x="545.8421" y="148">
 C#
 </text>
-<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: dark" x="632.6842" y="148">
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: black" x="632.6842" y="148">
 D#
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="676.1052" y="148">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="676.1052" y="148">
 E
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="719.5263" y="148">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="719.5263" y="148">
 F
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="806.3684" y="148">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="806.3684" y="148">
 G
 </text>
-<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: dark" x="849.7894" y="148">
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: black" x="849.7894" y="148">
 G#
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="68.210526" y="118">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="68.210526" y="118">
 G
 </text>
-<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: dark" x="111.63158" y="118">
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: black" x="111.63158" y="118">
 G#
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="155.05263" y="118">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="155.05263" y="118">
 A
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="241.89473" y="118">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="241.89473" y="118">
 B
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="285.3158" y="118">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="285.3158" y="118">
 C
 </text>
-<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: dark" x="328.73682" y="118">
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: black" x="328.73682" y="118">
 C#
 </text>
-<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: dark" x="415.57892" y="118">
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: black" x="415.57892" y="118">
 D#
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="459" y="118">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="459" y="118">
 E
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="502.42102" y="118">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="502.42102" y="118">
 F
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="589.2631" y="118">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="589.2631" y="118">
 G
 </text>
-<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: dark" x="632.6842" y="118">
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: black" x="632.6842" y="118">
 G#
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="676.1052" y="118">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="676.1052" y="118">
 A
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="762.9473" y="118">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="762.9473" y="118">
 B
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="806.3684" y="118">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="806.3684" y="118">
 C
 </text>
-<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: dark" x="849.7894" y="118">
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: black" x="849.7894" y="118">
 C#
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="68.210526" y="88">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="68.210526" y="88">
 B
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="111.63158" y="88">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="111.63158" y="88">
 C
 </text>
-<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: dark" x="155.05263" y="88">
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: black" x="155.05263" y="88">
 C#
 </text>
-<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: dark" x="241.89473" y="88">
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: black" x="241.89473" y="88">
 D#
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="285.3158" y="88">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="285.3158" y="88">
 E
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="328.73682" y="88">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="328.73682" y="88">
 F
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="415.57892" y="88">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="415.57892" y="88">
 G
 </text>
-<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: dark" x="459" y="88">
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: black" x="459" y="88">
 G#
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="502.42102" y="88">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="502.42102" y="88">
 A
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="589.2631" y="88">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="589.2631" y="88">
 B
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="632.6842" y="88">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="632.6842" y="88">
 C
 </text>
-<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: dark" x="676.1052" y="88">
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: black" x="676.1052" y="88">
 C#
 </text>
-<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: dark" x="762.9473" y="88">
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: black" x="762.9473" y="88">
 D#
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="806.3684" y="88">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="806.3684" y="88">
 E
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="849.7894" y="88">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="849.7894" y="88">
 F
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="68.210526" y="58">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="68.210526" y="58">
 E
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="111.63158" y="58">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="111.63158" y="58">
 F
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="198.47368" y="58">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="198.47368" y="58">
 G
 </text>
-<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: dark" x="241.89473" y="58">
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: black" x="241.89473" y="58">
 G#
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="285.3158" y="58">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="285.3158" y="58">
 A
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="372.1579" y="58">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="372.1579" y="58">
 B
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="415.57892" y="58">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="415.57892" y="58">
 C
 </text>
-<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: dark" x="459" y="58">
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: black" x="459" y="58">
 C#
 </text>
-<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: dark" x="545.8421" y="58">
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: black" x="545.8421" y="58">
 D#
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="589.2631" y="58">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="589.2631" y="58">
 E
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="632.6842" y="58">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="632.6842" y="58">
 F
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="719.5263" y="58">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="719.5263" y="58">
 G
 </text>
-<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: dark" x="762.9473" y="58">
+<text dominant-baseline="middle" dx="-1" style="font-family: Verdana; fill: black" x="762.9473" y="58">
 G#
 </text>
-<text dominant-baseline="middle" style="font-family: Verdana; fill: dark" x="806.3684" y="58">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: black" x="806.3684" y="58">
 A
 </text>
 </g>
 <g class="text_circle" style="font-family: Verdana; fill: white;" text-anchor="middle">
-<text dominant-baseline="middle" x="25" y="205">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white;" x="25" y="205">
 E
 </text>
-<text dominant-baseline="middle" x="25" y="175">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white;" x="25" y="175">
 A
 </text>
-<text dominant-baseline="middle" x="25" y="145">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white;" x="25" y="145">
 D
 </text>
-<text dominant-baseline="middle" x="25" y="115">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white;" x="25" y="115">
 G
 </text>
-<text dominant-baseline="middle" x="25" y="85">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white;" x="25" y="85">
 B
 </text>
-<text dominant-baseline="middle" x="25" y="55">
+<text dominant-baseline="middle" style="font-family: Verdana; fill: white;" x="25" y="55">
 E
 </text>
 </g>

@@ -24,7 +24,7 @@ pub const THEME_BG_DARK: &str = "#282c34";
 pub const THEME_ITEM_LIGHT: &str = "black";
 pub const THEME_ITEM_DARK: &str = "white";
 pub const THEME_TEXT_COLOR_LIGHT: &str= "white";
-pub const THEME_TEXT_COLOR_DARK: &str= "dark";
+pub const THEME_TEXT_COLOR_DARK: &str= "black";
 
 pub const VER_HEIGHT_TOP: u16 = 50;
 pub const VER_HEIGHT_BOTTOM: u16 = 25;
@@ -100,7 +100,7 @@ impl DrawScale {
         };
         group_text = group_text
             .set("class", "text")
-            .set("style", style)
+            .set("style", style.clone())
             .set("text-anchor", "middle");
         let vec_n = vec![1, 3, 5, 7, 10, 12, 15];
         for n in vec_n {
@@ -112,6 +112,7 @@ impl DrawScale {
                     Text::new()
                         .set("class", "header")
                         .set("dominant-baseline", "middle")
+                        .set("style", style.clone())
                         .set("x", width_pos + w as Number + SWIFT_WIDTH_OFFSET_NOTE_NAME)
                         .set("y", height_pos + h as Number + SWIFT_HEIGHT_OFFSET_NOTE_NAME)
                         .set("dx", OFFSET_TEXT_BOTTOM)
@@ -122,6 +123,7 @@ impl DrawScale {
                     Text::new()
                         .set("class", "header")
                         .set("dominant-baseline", "middle")
+                        .set("style", style.clone())
                         .set("x", width_pos + w as Number + SWIFT_WIDTH_OFFSET_NOTE_NAME)
                         .set("y", height_pos + h as Number + SWIFT_HEIGHT_OFFSET_NOTE_NAME)
                         .add(node::Text::new(n.to_string())),
@@ -280,7 +282,7 @@ impl DrawScale {
         };
         group_text_left = group_text_left
             .set("class", "text_circle")
-            .set("style", style)
+            .set("style", style.clone())
             .set("text-anchor", "middle");
         let interval = self.scale.tuning.get_interval();
         let roots = [
@@ -317,6 +319,7 @@ impl DrawScale {
                         .set("x", width_pos as Number)
                         .set("y", height_pos as Number)
                         .set("dx", OFFSET_TEXT_BOTTOM)
+                        .set("style", style.clone())
                         .add(node::Text::new(note.to_string())),
                 );
             } else {
@@ -325,6 +328,7 @@ impl DrawScale {
                         .set("dominant-baseline", "middle")
                         .set("x", width_pos as Number)
                         .set("y", height_pos as Number)
+                        .set("style", style.clone())
                         .add(node::Text::new(note.to_string())),
                 );
             }
