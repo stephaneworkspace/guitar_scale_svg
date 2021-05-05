@@ -1,5 +1,5 @@
 [package]
-name = "guitar_scale_svg"
+name = "guitar_scale"
 version = "0.1.0"
 authors = ["stephaneworkspace <stephane@bressani.dev>"]
 edition = "2018"

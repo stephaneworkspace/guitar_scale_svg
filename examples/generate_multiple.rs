@@ -1,13 +1,14 @@
-use guitar_scale_svg::note::{Note, TraitGenerate};
-use guitar_scale_svg::scale::Scale;
-use guitar_scale_svg::scale::ScaleType;
 use std::str::FromStr;
-use guitar_scale_svg::svg_draw::{Theme, DrawScale};
 use std::fs::File;
 use guitar_scale_svg::tuning::Tuning;
 use strum::IntoEnumIterator;
 use std::io::Write;
+use guitar_scale::note::{Note, TraitGenerate};
+use guitar_scale::scale::Scale;
+use guitar_scale::tuning::Tuning;
+use guitar_scale::svg_draw::{DrawScale, Theme};
 
+/// Generate scales svg
 fn main() -> std::io::Result<()> {
     let vec_note = ["C","C#","D","D#","E","F","F#","G","G#","A","A#","B"];
     for x in vec_note.to_vec().iter() {
@@ -16,6 +17,7 @@ fn main() -> std::io::Result<()> {
     Ok(())
 }
 
+/// Generate scales svg for a specified tonic
 fn note(note: &str) -> std::io::Result<()> {
     let tonic = match Note::from_str(&note) {
         Ok(ok) => ok,
