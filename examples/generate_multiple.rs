@@ -1,11 +1,11 @@
 use std::str::FromStr;
 use std::fs::File;
-use guitar_scale_svg::tuning::Tuning;
+use guitar_scale::tuning::Tuning;
 use strum::IntoEnumIterator;
 use std::io::Write;
 use guitar_scale::note::{Note, TraitGenerate};
 use guitar_scale::scale::Scale;
-use guitar_scale::tuning::Tuning;
+use guitar_scale::scale::ScaleType;
 use guitar_scale::svg_draw::{DrawScale, Theme};
 
 /// Generate scales svg
