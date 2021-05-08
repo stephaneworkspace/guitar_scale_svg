@@ -38,6 +38,8 @@ pub const VER_FLUTTER_OFFSET_NOTE_NAME: Number = 4.75;
 pub const SWIFT_WIDTH_OFFSET_NOTE_NAME: Number = -3.5;
 pub const SWIFT_HEIGHT_OFFSET_NOTE_NAME: Number = 3.0;
 
+pub const SWIFT_VERTICAL_WIDTH_OFFSET: Number = -3.5;
+
 pub struct DrawScale {
     pub scale: Scale,
     theme: Theme,
@@ -415,6 +417,7 @@ impl DrawScale {
         }
         group_grid =
             group_grid.add(Path::new().set("class", "grid").set("d", d));
+
         // Bottom point on fret
         let width_pos: Number = VER_WIDTH_LEFT as f32 + VER_WIDTH as f32;
         let height_pos: Number = VER_HEIGHT_TOP as f32;
@@ -475,6 +478,7 @@ impl DrawScale {
                 );
             }
         }
+
         // Circle note
         let mut group_circle_tonic: Group = Group::new();
         group_circle_tonic = group_circle_tonic
@@ -618,7 +622,7 @@ impl DrawScale {
                             group_text_circle = group_text_circle.add(
                                 Text::new()
                                     .set("dominant-baseline", "middle")
-                                    .set("x", width_pos)
+                                    .set("x", width_pos + SWIFT_VERTICAL_WIDTH_OFFSET)
                                     .set(
                                         "y",
                                         height_pos
@@ -634,7 +638,7 @@ impl DrawScale {
                             group_text_circle = group_text_circle.add(
                                 Text::new()
                                     .set("dominant-baseline", "middle")
-                                    .set("x", width_pos)
+                                    .set("x", width_pos +  SWIFT_VERTICAL_WIDTH_OFFSET)
                                     .set(
                                         "y",
                                         height_pos
@@ -663,6 +667,8 @@ impl DrawScale {
             .set("class", "text_circle")
             .set("style", style.clone())
             .set("text-anchor", "middle");
+
+        // Single strings title
         let interval = self.scale.tuning.get_interval();
         let roots = [
             Note::from_str("E").unwrap() + interval,
@@ -701,7 +707,7 @@ impl DrawScale {
                 group_text_left = group_text_left.add(
                     Text::new()
                         .set("dominant-baseline", "middle")
-                        .set("x", width_pos as Number)
+                        .set("x", width_pos as Number + SWIFT_VERTICAL_WIDTH_OFFSET)
                         .set("y", height_pos as Number)
                         .set("dx", OFFSET_TEXT_BOTTOM)
                         .set("style", style.clone())
@@ -711,7 +717,7 @@ impl DrawScale {
                 group_text_left = group_text_left.add(
                     Text::new()
                         .set("dominant-baseline", "middle")
-                        .set("x", width_pos as Number)
+                        .set("x", width_pos as Number + SWIFT_VERTICAL_WIDTH_OFFSET)
                         .set("y", height_pos as Number)
                         .set("style", style.clone())
                         .add(node::Text::new(note.to_string())),
