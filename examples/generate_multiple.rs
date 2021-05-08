@@ -34,12 +34,23 @@ fn note(note: &str) -> std::io::Result<()> {
     }).collect();
     for v_s in vec_scale {
         let draw: DrawScale = DrawScale::new(v_s, Theme::Light);
-        let svg = format!("{}",draw.draw_base());
-        let mut buffer = File::create(format!("temp/scale_light_{}_{}.svg", v_s.scale_type.get_name_short(), &tonic.data_name()))?;
+
+        let svg = format!("{}",draw.draw_base_vertical());
+        let mut buffer = File::create(format!("temp_scales_svg/scale_v_light_{}_{}.svg", v_s.scale_type.get_name_short(), &tonic.data_name()))?;
         buffer.write_all(&svg.as_bytes())?;
-        let draw: DrawScale = DrawScale::new(v_s, Theme::Dark);
+
         let svg = format!("{}",draw.draw_base());
-        let mut buffer = File::create(format!("temp/scale_dark_{}_{}.svg", v_s.scale_type.get_name_short(), &tonic.data_name()))?;
+        let mut buffer = File::create(format!("temp_scales_svg/scale_h_light_{}_{}.svg", v_s.scale_type.get_name_short(), &tonic.data_name()))?;
+        buffer.write_all(&svg.as_bytes())?;
+
+        let draw: DrawScale = DrawScale::new(v_s, Theme::Dark);
+
+        let svg = format!("{}",draw.draw_base_vertical());
+        let mut buffer = File::create(format!("temp_scales_svg/scale_v_dark_{}_{}.svg", v_s.scale_type.get_name_short(), &tonic.data_name()))?;
+        buffer.write_all(&svg.as_bytes())?;
+
+        let svg = format!("{}",draw.draw_base());
+        let mut buffer = File::create(format!("temp_scales_svg/scale_h_dark_{}_{}.svg", v_s.scale_type.get_name_short(), &tonic.data_name()))?;
         buffer.write_all(&svg.as_bytes())?;
     }
     Ok(())

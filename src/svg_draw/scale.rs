@@ -210,7 +210,7 @@ impl DrawScale {
         };
         group_text_circle = group_text_circle
             .set("class", "text_circle")
-            .set("style", format!("font-family: Verdana;") )
+            .set("style", "font-family: Verdana;")
             .set("font-size", "9")
             .set("fill", style_color)
             .set("text-anchor", "middle");
@@ -431,7 +431,7 @@ impl DrawScale {
         };
         group_text = group_text
             .set("class", "text")
-            .set("style", style.to_string())
+            .set("style", style.clone())
             .set("text-anchor", "middle");
         let vec_n = vec![1, 3, 5, 7, 10, 12, 15];
         for n in vec_n {
@@ -447,6 +447,7 @@ impl DrawScale {
                     Text::new()
                         .set("class", "header")
                         .set("dominant-baseline", "middle")
+                        .set("style", style.clone())
                         .set("x", width_pos + w as Number)
                         .set(
                             "y",
@@ -462,6 +463,7 @@ impl DrawScale {
                     Text::new()
                         .set("class", "header")
                         .set("dominant-baseline", "middle")
+                        .set("style", style.clone())
                         .set("x", width_pos + w as Number)
                         .set(
                             "y",
@@ -557,15 +559,19 @@ impl DrawScale {
         }
         // Text Tonic + In Scale
         let mut group_text_circle: Group = Group::new();
-        let style = match self.theme {
+        /*let style = match self.theme {
             Theme::Light => THEME_BG_LIGHT,
             Theme::Dark => THEME_BG_DARK,
+        };*/
+        let style_color = match self.theme {
+            Theme::Light => THEME_TEXT_COLOR_LIGHT,
+            Theme::Dark => THEME_TEXT_COLOR_DARK,
         };
         group_text_circle = group_text_circle
             .set("class", "text_circle")
             .set("style", "font-family: Verdana;")
             .set("font-size", "14")
-            .set("fill", style)
+            .set("fill", style_color)
             .set("text-anchor", "middle");
         for i in 0..NUMBER_STRING {
             let single_string = vec_all_strings[i as usize].clone();
@@ -600,6 +606,14 @@ impl DrawScale {
                         //let width_pos: Number = WIDTH_LEFT as f32;
                         //w = WIDTH as f32 / NUMBER_POSITION as f32;
                         //w = w * (j as f32 + 0.5);
+                        let style = match self.theme {
+                            Theme::Light => {
+                                format!("font-family: Verdana; fill: {}", THEME_TEXT_COLOR_LIGHT)
+                            },
+                            Theme::Dark => {
+                                format!("font-family: Verdana; fill: {}", THEME_TEXT_COLOR_DARK)
+                            },
+                        };
                         if note.len() > 1 {
                             group_text_circle = group_text_circle.add(
                                 Text::new()
@@ -613,6 +627,7 @@ impl DrawScale {
                                             as Number,
                                     )
                                     .set("dx", OFFSET_TEXT_BOTTOM)
+                                    .set("style", style)
                                     .add(node::Text::new(note.to_string())),
                             );
                         } else {
@@ -627,6 +642,7 @@ impl DrawScale {
                                             + VER_FLUTTER_OFFSET_NOTE_NAME
                                             as Number,
                                     )
+                                    .set("style", style)
                                     .add(node::Text::new(note.to_string())),
                             );
                         }
@@ -645,7 +661,7 @@ impl DrawScale {
         };
         group_text_left = group_text_left
             .set("class", "text_circle")
-            .set("style", style)
+            .set("style", style.clone())
             .set("text-anchor", "middle");
         let interval = self.scale.tuning.get_interval();
         let roots = [
@@ -688,6 +704,7 @@ impl DrawScale {
                         .set("x", width_pos as Number)
                         .set("y", height_pos as Number)
                         .set("dx", OFFSET_TEXT_BOTTOM)
+                        .set("style", style.clone())
                         .add(node::Text::new(note.to_string())),
                 );
             } else {
@@ -696,6 +713,7 @@ impl DrawScale {
                         .set("dominant-baseline", "middle")
                         .set("x", width_pos as Number)
                         .set("y", height_pos as Number)
+                        .set("style", style.clone())
                         .add(node::Text::new(note.to_string())),
                 );
             }
@@ -712,7 +730,7 @@ impl DrawScale {
             .set("height", VER_HEIGHT_TOP + VER_HEIGHT + VER_HEIGHT_BOTTOM)
             .set("preserveAspectRatio", "xMidYMid mee    t")
             .set("font-size", 16.0)
-            .set("style", style.to_string())
+            .set("style", style)
             .set(
                 "viewBox",
                 (
