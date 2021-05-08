@@ -6,10 +6,18 @@ use std::path::Path;
 
 /// Copy assets from renoise output folder to ./temp audio
 fn main() -> io::Result<()> {
-    let vec_note = ["E","F","F#","G","G#","A","A#","B","C","C#","D","D#"];
+    let vec_note = ["C","C#","D","D#","E","F","F#","G","G#","A","A#","B",];
     let mut idx: u8 = 0 as u8;
     for pitch in 0 as u8..3 as u8 {
-        for x in vec_note.to_vec().iter() {
+        for x in vec_note.to_vec().iter().filter(|&&x_str| if pitch == 0 {
+            if x_str == "C" || x_str == "C#" || x_str == "D" || x_str == "D#" {
+                false
+            } else {
+                true
+            }
+        } else {
+            true
+        } ) {
             idx += 1;
             copy(*x, pitch, idx)?;
         }
