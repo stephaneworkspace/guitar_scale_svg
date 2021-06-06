@@ -107,7 +107,7 @@ impl DrawScale {
         let vec_n = vec![1, 3, 5, 7, 10, 12, 15];
         for n in vec_n {
             let mut w: Number = WIDTH as f32 / NUMBER_POSITION as f32;
-            w = w * (n as f32 + 0.5);
+            w *= n as f32 + 0.5;
             let h = HEIGHT_BOTTOM / 2;
             if n.to_string().len() > 1 {
                 group_text = group_text.add(
@@ -158,19 +158,17 @@ impl DrawScale {
                 * (self.guitar_string_convert(i) as f32 + 1.0));
             for j in 0..NUMBER_POSITION {
                 for v in &single_string.degree_single_string {
-                    if v.position == j as usize {
-                        if v.sw_tonic.clone() {
-                            let width_pos: Number = WIDTH_LEFT as f32;
-                            w = WIDTH as f32 / NUMBER_POSITION as f32;
-                            w = w * (j as f32 + 0.5);
-                            group_circle_tonic = group_circle_tonic.add(
-                                Circle::new()
-                                    .set("cx", width_pos + w as Number)
-                                    .set("cy", height_pos)
-                                    .set("r", note_r),
-                            );
-                            break;
-                        }
+                    if v.position == j as usize && v.sw_tonic {
+                        let width_pos: Number = WIDTH_LEFT as f32;
+                        w = WIDTH as f32 / NUMBER_POSITION as f32;
+                        w *= j as f32 + 0.5;
+                        group_circle_tonic = group_circle_tonic.add(
+                            Circle::new()
+                                .set("cx", width_pos + w as Number)
+                                .set("cy", height_pos)
+                                .set("r", note_r),
+                        );
+                        break;
                     }
                 }
             }
@@ -183,19 +181,17 @@ impl DrawScale {
                 * (self.guitar_string_convert(i) as f32 + 1.0));
             for j in 0..NUMBER_POSITION {
                 for v in &single_string.degree_single_string {
-                    if v.position == j as usize {
-                        if !v.sw_tonic.clone() {
-                            let width_pos: Number = WIDTH_LEFT as f32;
-                            w = WIDTH as f32 / NUMBER_POSITION as f32;
-                            w = w * (j as f32 + 0.5);
-                            group_circle_in_scale = group_circle_in_scale.add(
-                                Circle::new()
-                                    .set("cx", width_pos + w as Number)
-                                    .set("cy", height_pos)
-                                    .set("r", note_r),
-                            );
-                            break;
-                        }
+                    if v.position == j as usize && !v.sw_tonic {
+                        let width_pos: Number = WIDTH_LEFT as f32;
+                        w = WIDTH as f32 / NUMBER_POSITION as f32;
+                        w *= j as f32 + 0.5;
+                        group_circle_in_scale = group_circle_in_scale.add(
+                            Circle::new()
+                                .set("cx", width_pos + w as Number)
+                                .set("cy", height_pos)
+                                .set("r", note_r),
+                        );
+                        break;
                     }
                 }
             }
@@ -240,7 +236,7 @@ impl DrawScale {
                         };
                         let width_pos: Number = WIDTH_LEFT as f32;
                         w = WIDTH as f32 / NUMBER_POSITION as f32;
-                        w = w * (j as f32 + 0.5);
+                        w *= j as f32 + 0.5;
                         let style = match self.theme {
                             Theme::Light => {
                                 format!("font-family: Verdana; fill: {}", THEME_TEXT_COLOR_LIGHT)
@@ -298,8 +294,8 @@ impl DrawScale {
         for i in 0..NUMBER_STRING {
             let height_pos: Number = HEIGHT_TOP as f32
                 + ((HEIGHT as f32 / NUMBER_STRING as f32)
-                * (self.guitar_string_convert(i.clone()) as f32 + 1.0));
-            let note = match roots[i as usize].clone().pitch_class {
+                * (self.guitar_string_convert(i) as f32 + 1.0));
+            let note = match roots[i as usize].pitch_class {
                 PitchClass::C => "C",
                 PitchClass::CSharp => "C#",
                 PitchClass::D => "D",
@@ -340,7 +336,7 @@ impl DrawScale {
             Theme::Light => format!("background: {};", THEME_BG_LIGHT),
             Theme::Dark => format!("background: {};", THEME_BG_DARK),
         };
-        let document = Document::new()
+        Document::new()
             .set("class", "chord-chart")
             .set("xmlns", "http://www.w3.org/2000/svg")
             .set("width", WIDTH_LEFT + WIDTH + WIDTH_RIGHT)
@@ -362,8 +358,7 @@ impl DrawScale {
             .add(group_circle_tonic)
             .add(group_circle_in_scale)
             .add(group_text_circle)
-            .add(group_text_left);
-        document
+            .add(group_text_left)
     }
 
     /// Draw the svg
@@ -380,7 +375,7 @@ impl DrawScale {
             ),
         };
         let mut group_grid: Group = Group::new()
-            .set("style", style.to_string())
+            .set("style", style)
             .set("class", "grid");
         let mut d: Data = Data::new();
         let width_pos: Number = VER_WIDTH_LEFT as f32;
@@ -439,7 +434,7 @@ impl DrawScale {
         let vec_n = vec![1, 3, 5, 7, 10, 12, 15];
         for n in vec_n {
             let mut h: Number = VER_HEIGHT as f32 / NUMBER_POSITION as f32;
-            h = h * (n as f32 + 0.5);
+            h *= n as f32 + 0.5;
             let w = VER_WIDTH_RIGHT / 2;
 
             //let mut w: Number = WIDTH as f32 / NUMBER_POSITION as f32;
@@ -510,22 +505,20 @@ impl DrawScale {
             //        * (self.ukulele_string_convert(i) as f32 + 1.0));
             for j in 0..NUMBER_POSITION {
                 for v in &single_string.degree_single_string {
-                    if v.position == j as usize {
-                        if v.sw_tonic.clone() {
-                            let height_pos: Number = VER_HEIGHT_TOP as f32;
-                            h = VER_HEIGHT as f32 / NUMBER_POSITION as f32;
-                            h = h * (j as f32 + 0.5);
-                            // let width_pos: Number = WIDTH_LEFT as f32;
-                            // w = WIDTH as f32 / NUMBER_POSITION as f32;
-                            // w = w * (j as f32 + 0.5);
-                            group_circle_tonic = group_circle_tonic.add(
-                                Circle::new()
-                                    .set("cx", width_pos)
-                                    .set("cy", height_pos + h as Number)
-                                    .set("r", note_r),
-                            );
-                            break;
-                        }
+                    if v.position == j as usize && v.sw_tonic {
+                        let height_pos: Number = VER_HEIGHT_TOP as f32;
+                        h = VER_HEIGHT as f32 / NUMBER_POSITION as f32;
+                        h *= j as f32 + 0.5;
+                        // let width_pos: Number = WIDTH_LEFT as f32;
+                        // w = WIDTH as f32 / NUMBER_POSITION as f32;
+                        // w = w * (j as f32 + 0.5);
+                        group_circle_tonic = group_circle_tonic.add(
+                            Circle::new()
+                                .set("cx", width_pos)
+                                .set("cy", height_pos + h as Number)
+                                .set("r", note_r),
+                        );
+                        break;
                     }
                 }
             }
@@ -541,22 +534,20 @@ impl DrawScale {
             //        * (self.ukulele_string_convert(i) as f32 + 1.0));
             for j in 0..NUMBER_POSITION {
                 for v in &single_string.degree_single_string {
-                    if v.position == j as usize {
-                        if !v.sw_tonic.clone() {
-                            let height_pos: Number = VER_HEIGHT_TOP as f32;
-                            h = VER_HEIGHT as f32 / NUMBER_POSITION as f32;
-                            h = h * (j as f32 + 0.5);
-                            //let width_pos: Number = WIDTH_LEFT as f32;
-                            //w = WIDTH as f32 / NUMBER_POSITION as f32;
-                            //w = w * (j as f32 + 0.5);
-                            group_circle_in_scale = group_circle_in_scale.add(
-                                Circle::new()
-                                    .set("cx", width_pos)
-                                    .set("cy", height_pos + h as Number)
-                                    .set("r", note_r),
-                            );
-                            break;
-                        }
+                    if v.position == j as usize && !v.sw_tonic {
+                        let height_pos: Number = VER_HEIGHT_TOP as f32;
+                        h = VER_HEIGHT as f32 / NUMBER_POSITION as f32;
+                        h *= j as f32 + 0.5;
+                        //let width_pos: Number = WIDTH_LEFT as f32;
+                        //w = WIDTH as f32 / NUMBER_POSITION as f32;
+                        //w = w * (j as f32 + 0.5);
+                        group_circle_in_scale = group_circle_in_scale.add(
+                            Circle::new()
+                                .set("cx", width_pos)
+                                .set("cy", height_pos + h as Number)
+                                .set("r", note_r),
+                        );
+                        break;
                     }
                 }
             }
@@ -606,7 +597,7 @@ impl DrawScale {
                         };
                         let height_pos: Number = VER_HEIGHT_TOP as f32;
                         h = VER_HEIGHT as f32 / NUMBER_POSITION as f32;
-                        h = h * (j as f32 + 0.5);
+                        h *= j as f32 + 0.5;
                         //let width_pos: Number = WIDTH_LEFT as f32;
                         //w = WIDTH as f32 / NUMBER_POSITION as f32;
                         //w = w * (j as f32 + 0.5);
@@ -682,12 +673,12 @@ impl DrawScale {
             let width_pos: Number = VER_WIDTH_LEFT as f32
                 + ((VER_OFFSET_WIDTH as f32)
                 //  + ((VER_WIDTH as f32 / NUMBER_STRING as f32)
-                * i.clone() as f32
+                * i as f32
                 + 0.0);
             // let height_pos: Number = HEIGHT_TOP as f32
             //    + ((HEIGHT as f32 / NUMBER_STRING as f32)
             //        * (self.ukulele_string_convert(i.clone()) as f32 + 1.0));
-            let note = match roots[i as usize].clone().pitch_class {
+            let note = match roots[i as usize].pitch_class {
                 PitchClass::C => "C",
                 PitchClass::CSharp => "C#",
                 PitchClass::D => "D",
@@ -729,7 +720,7 @@ impl DrawScale {
             Theme::Light => format!("background: {};", THEME_BG_LIGHT),
             Theme::Dark => format!("background: {};", THEME_BG_DARK),
         };
-        let document = Document::new()
+        Document::new()
             .set("class", "chord-chart")
             .set("xmlns", "http://www.w3.org/2000/svg")
             .set("width", VER_WIDTH_LEFT + VER_WIDTH + VER_WIDTH_RIGHT)
@@ -755,8 +746,7 @@ impl DrawScale {
             .add(group_circle_tonic)
             .add(group_circle_in_scale)
             .add(group_text_circle)
-            .add(group_text_left);
-        document
+            .add(group_text_left)
     }
     ///
     /// # Arguments

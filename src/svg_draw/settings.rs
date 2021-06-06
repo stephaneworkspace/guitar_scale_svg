@@ -22,12 +22,10 @@ impl FromStr for Theme {
 
         if s == "L" {
             Ok(Light)
+        } else if s == "D" {
+            Ok(Dark)
         } else {
-            if s == "D" {
-                Ok(Dark)
-            } else {
-                Err(ParseThemeError { name })
-            }
+            Err(ParseThemeError { name })
         }
     }
 }

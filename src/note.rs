@@ -63,7 +63,7 @@ impl TraitNoteSemitones for Note {
         // There does not seem to be a good way to turn integers into enum
         // variants without using external crates. Hardcoding the mapping
         // is not so elegant but at least readable.
-        let pitch_class = match semitones_redux.clone() {
+        let pitch_class = match semitones_redux {
             0 => C,
             1 => CSharp,
             2 => D,
@@ -79,7 +79,7 @@ impl TraitNoteSemitones for Note {
             // Because of the modulo, `degre_compute` will always be in the correct range.
             _ => unreachable!(),
         };
-        let staff_position = match semitones_redux.clone() {
+        let staff_position = match semitones_redux {
             0 => CPos,
             1 => CPos,
             2 => DPos,

@@ -100,7 +100,7 @@ impl ScaleType {
     /// Degree from the tonic 1..12
     fn get_degree_from_tonic(self) -> Vec<Degree> {
         use ScaleType::*;
-        let degree = match self {
+        match self {
             Major => vec![1, 3, 5, 6, 8, 10, 12],
             Minor => vec![1, 3, 4, 6, 8, 9, 11],
             Dorian => vec![1, 3, 4, 6, 8, 10, 11],
@@ -137,8 +137,7 @@ impl ScaleType {
             Messiaen5 => vec![1, 2, 6, 7, 8, 12],
             Messiaen6 => vec![1, 3, 5, 6, 7, 9, 11, 12],
             Messiaen7 => vec![1, 2, 3, 4, 6, 7, 8, 9, 10, 12],
-        };
-        degree
+        }
     }
 
     /// Name short
@@ -421,12 +420,12 @@ impl Scale {
 
         let mut vec_pitch_class: Vec<PitchClass> = Vec::new();
         for d in degree {
-            let mut degree_compute = (d - 1) + &pc_semitones; // d - 1 because
+            let mut degree_compute = (d - 1) + pc_semitones; // d - 1 because
             // degree start at
             // 1, not 0
 
             // Make sure we get a value between 0 and 11.
-            degree_compute = degree_compute % PITCH_CLASS_COUNT;
+            degree_compute %= PITCH_CLASS_COUNT;
 
             // There does not seem to be a good way to turn integers into enum
             // variants without using external crates. Hardcoding the mapping
@@ -453,15 +452,11 @@ impl Scale {
         let mut vec_semitones: Vec<(Semitones, bool)> = Vec::new();
         for n in 0..255 {
             let n_pitch_class = PitchClass::from(n as Semitones);
-            let sw_tonic = if n_pitch_class.clone() == self.tonic.pitch_class {
-                true
-            } else {
-                false
-            };
+            let sw_tonic = n_pitch_class == self.tonic.pitch_class;
             for vpc in vec_pitch_class.clone() {
                 // Found
                 if vpc == n_pitch_class {
-                    vec_semitones.push((n, sw_tonic.clone()));
+                    vec_semitones.push((n, sw_tonic));
                 }
             }
         }
@@ -487,7 +482,7 @@ impl Scale {
             if string_number > NUMBER_STRING as usize {
                 break;
             }
-            let i = string_number.clone() - 1;
+            let i = string_number - 1;
             let p_class: PitchClass = roots[i].pitch_class;
 
             let pos_begin: usize = match &p_class {
@@ -523,10 +518,10 @@ impl Scale {
                 for (d, sw_bool) in self.get_degree() {
                     // Position in scale
                     if d as usize == count {
-                        let position = count.clone() - &pos_begin;
-                        let sw_tonic = sw_bool.clone();
+                        let position = count - pos_begin;
+                        let sw_tonic = sw_bool;
                         let note =
-                            Note::from_semitones(count.clone() as Semitones);
+                            Note::from_semitones(count as Semitones);
                         let degree_single_string = DegreeSingleString {
                             position,
                             sw_tonic,

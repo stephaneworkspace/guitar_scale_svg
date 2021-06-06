@@ -7,6 +7,8 @@ mod interval;
 extern crate strum;
 #[macro_use]
 extern crate strum_macros;
+extern crate serde;
+extern crate serde_derive;
 
 /// The number of degree is the position from tonic in scale
 type Degree = u8;
