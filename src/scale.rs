@@ -117,7 +117,7 @@ impl ScaleType {
             MajorPentagonic => vec![1, 4, 6, 8, 11],
             HarmonicMinor => vec![1, 3, 4, 6, 8, 9, 12],
             HarmonicMajor => vec![1, 3, 5, 6, 8, 9, 12],
-            Dorian4 => vec![1, 3, 4, 7, 8, 10, 11],
+            Dorian4 => vec![2, 3, 6, 7, 9, 10, 12],
             PhrygianDominant => vec![1, 2, 5, 6, 8, 9, 11],
             MelodicMinor => vec![1, 3, 4, 6, 8, 10, 12],
             LydianAugumented => vec![1, 3, 5, 7, 9, 10, 12],

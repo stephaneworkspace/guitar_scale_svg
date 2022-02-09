@@ -8,6 +8,7 @@ use crate::scale::{Scale, DegreeAllStrings};
 use crate::NUMBER_STRING;
 use ukebox::PitchClass;
 use crate::svg_draw::settings::Theme;
+use crate::svg_draw::settings::Instrument;
 use crate::note::Note;
 use crate::interval::Interval;
 
@@ -53,6 +54,33 @@ impl DrawScale {
     /// Draw the svg
     pub fn draw_base(&self) -> Document {
         // Grid
+        let style = match self.theme.clone() {
+            Theme::Light(instrument) => {
+                match instrument {
+                    Instrument::Guitar => format!(
+                        "background: {}; stroke: {}; stroke-linecap: round;",
+                        THEME_BG_LIGHT, THEME_ITEM_LIGHT
+                    ),
+                    Instrument::Piano => format!(
+                        "background: {}; stroke: {}; stroke-linecap: round;",
+                        THEME_BG_LIGHT, THEME_ITEM_LIGHT
+                    ), // TODO
+                }
+            },
+            Theme::Dark(instrument) => {
+                match instrument {
+                    Instrument::Guitar => format!(
+                        "background: {}; stroke: {}; stroke-linecap: round;",
+                        THEME_BG_DARK, THEME_ITEM_DARK
+                    ),
+                    Instrument::Piano => format!(
+                        "background: {}; stroke: {}; stroke-linecap: round;",
+                        THEME_BG_DARK, THEME_ITEM_DARK
+                    ), // TODO
+                }
+            }
+        };
+        /*
         let style = match self.theme {
             Theme::Light => format!(
                 "background: {}; stroke: {}; stroke-linecap: round;",
@@ -62,7 +90,7 @@ impl DrawScale {
                 "background: {}; stroke: {}; stroke-linecap: round;",
                 THEME_BG_DARK, THEME_ITEM_DARK
             ),
-        };
+        };*/
         let mut group_grid: Group =
             Group::new().set("style", style).set("class", "grid");
         let mut d: Data = Data::new();
@@ -92,11 +120,13 @@ impl DrawScale {
         let width_pos: Number = WIDTH_LEFT as f32;
         let height_pos: Number = HEIGHT_TOP as f32 + HEIGHT as f32;
         let mut group_text: Group = Group::new();
+
+        // TODO
         let style = match self.theme {
-            Theme::Light => {
+            Theme::Light(_)=> {
                 format!("font-family: Verdana; fill: {}", THEME_ITEM_LIGHT)
             },
-            Theme::Dark => {
+            Theme::Dark(_) => {
                 format!("font-family: Verdana; fill: {}", THEME_ITEM_DARK)
             },
         };
@@ -138,9 +168,10 @@ impl DrawScale {
             .set("class", "circle_tonic")
             .set("fill", "coral");
         let mut group_circle_in_scale: Group = Group::new();
+        // TODO
         let style = match self.theme {
-            Theme::Light => THEME_ITEM_LIGHT,
-            Theme::Dark => THEME_ITEM_DARK,
+            Theme::Light(_) => THEME_ITEM_LIGHT,
+            Theme::Dark(_) => THEME_ITEM_DARK,
         };
         group_circle_in_scale = group_circle_in_scale
             .set("class", "circle_in_scale")
@@ -198,13 +229,15 @@ impl DrawScale {
         }
         // Text Tonic + In Scale
         let mut group_text_circle: Group = Group::new();
+        // TODO avant dernier
         /*let style = match self.theme {
             Theme::Light => THEME_BG_LIGHT,
             Theme::Dark => THEME_BG_DARK,
         };*/
+        // TODO
         let style_color = match self.theme {
-            Theme::Light => THEME_TEXT_COLOR_LIGHT,
-            Theme::Dark => THEME_TEXT_COLOR_DARK,
+            Theme::Light(_) => THEME_TEXT_COLOR_LIGHT,
+            Theme::Dark(_) => THEME_TEXT_COLOR_DARK,
         };
         group_text_circle = group_text_circle
             .set("class", "text_circle")
@@ -238,10 +271,10 @@ impl DrawScale {
                         w = WIDTH as f32 / NUMBER_POSITION as f32;
                         w *= j as f32 + 0.5;
                         let style = match self.theme {
-                            Theme::Light => {
+                            Theme::Light(_) => {
                                 format!("font-family: Verdana; fill: {}", THEME_TEXT_COLOR_LIGHT)
                             },
-                            Theme::Dark => {
+                            Theme::Dark(_) => {
                                 format!("font-family: Verdana; fill: {}", THEME_TEXT_COLOR_DARK)
                             },
                         };
@@ -271,10 +304,10 @@ impl DrawScale {
         }
         let mut group_text_left: Group = Group::new();
         let style = match self.theme {
-            Theme::Light => {
+            Theme::Light(_) => {
                 format!("font-family: Verdana; fill: {};", THEME_ITEM_LIGHT)
             },
-            Theme::Dark => {
+            Theme::Dark(_) => {
                 format!("font-family: Verdana; fill: {};", THEME_ITEM_DARK)
             },
         };
@@ -333,8 +366,8 @@ impl DrawScale {
         }
         // End
         let style = match self.theme {
-            Theme::Light => format!("background: {};", THEME_BG_LIGHT),
-            Theme::Dark => format!("background: {};", THEME_BG_DARK),
+            Theme::Light(_) => format!("background: {};", THEME_BG_LIGHT),
+            Theme::Dark(_) => format!("background: {};", THEME_BG_DARK),
         };
         Document::new()
             .set("class", "chord-chart")
@@ -365,11 +398,11 @@ impl DrawScale {
     pub fn draw_base_vertical(&self) -> Document {
         // Grid
         let style = match self.theme {
-            Theme::Light => format!(
+            Theme::Light(_) => format!(
                 "background: {}; stroke: {}; stroke-linecap: round;",
                 THEME_BG_LIGHT, THEME_ITEM_LIGHT
             ),
-            Theme::Dark => format!(
+            Theme::Dark(_) => format!(
                 "background: {}; stroke: {}; stroke-linecap: round;",
                 THEME_BG_DARK, THEME_ITEM_DARK
             ),
@@ -420,10 +453,10 @@ impl DrawScale {
         //let height_pos: Number = HEIGHT_TOP as f32 + HEIGHT as f32;
         let mut group_text: Group = Group::new();
         let style = match self.theme {
-            Theme::Light => {
+            Theme::Light(_) => {
                 format!("font-family: Verdana; fill: {};", THEME_ITEM_LIGHT)
             },
-            Theme::Dark => {
+            Theme::Dark(_) => {
                 format!("font-family: Verdana; fill: {};", THEME_ITEM_DARK)
             },
         };
@@ -481,8 +514,8 @@ impl DrawScale {
             .set("fill", "coral");
         let mut group_circle_in_scale: Group = Group::new();
         let style = match self.theme {
-            Theme::Light => THEME_ITEM_LIGHT,
-            Theme::Dark => THEME_ITEM_DARK,
+            Theme::Light(_) => THEME_ITEM_LIGHT,
+            Theme::Dark(_) => THEME_ITEM_DARK,
         };
         group_circle_in_scale = group_circle_in_scale
             .set("class", "circle_in_scale")
@@ -559,8 +592,8 @@ impl DrawScale {
             Theme::Dark => THEME_BG_DARK,
         };*/
         let style_color = match self.theme {
-            Theme::Light => THEME_TEXT_COLOR_LIGHT,
-            Theme::Dark => THEME_TEXT_COLOR_DARK,
+            Theme::Light(_) => THEME_TEXT_COLOR_LIGHT,
+            Theme::Dark(_) => THEME_TEXT_COLOR_DARK,
         };
         group_text_circle = group_text_circle
             .set("class", "text_circle")
@@ -602,10 +635,10 @@ impl DrawScale {
                         //w = WIDTH as f32 / NUMBER_POSITION as f32;
                         //w = w * (j as f32 + 0.5);
                         let style = match self.theme {
-                            Theme::Light => {
+                            Theme::Light(_) => {
                                 format!("font-family: Verdana; fill: {}", THEME_TEXT_COLOR_LIGHT)
                             },
-                            Theme::Dark => {
+                            Theme::Dark(_) => {
                                 format!("font-family: Verdana; fill: {}", THEME_TEXT_COLOR_DARK)
                             },
                         };
@@ -647,10 +680,10 @@ impl DrawScale {
         }
         let mut group_text_left: Group = Group::new();
         let style = match self.theme {
-            Theme::Light => {
+            Theme::Light(_) => {
                 format!("font-family: Verdana; fill: {};", THEME_ITEM_LIGHT)
             },
-            Theme::Dark => {
+            Theme::Dark(_) => {
                 format!("font-family: Verdana; fill: {};", THEME_ITEM_DARK)
             },
         };
@@ -717,8 +750,8 @@ impl DrawScale {
         }
         // End
         let style = match self.theme {
-            Theme::Light => format!("background: {};", THEME_BG_LIGHT),
-            Theme::Dark => format!("background: {};", THEME_BG_DARK),
+            Theme::Light(_) => format!("background: {};", THEME_BG_LIGHT),
+            Theme::Dark(_) => format!("background: {};", THEME_BG_DARK),
         };
         Document::new()
             .set("class", "chord-chart")

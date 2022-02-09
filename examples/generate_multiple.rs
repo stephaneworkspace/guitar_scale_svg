@@ -6,7 +6,7 @@ use std::io::Write;
 use guitar_scale::note::{Note, TraitGenerate};
 use guitar_scale::scale::Scale;
 use guitar_scale::scale::ScaleType;
-use guitar_scale::svg_draw::{DrawScale, Theme};
+use guitar_scale::svg_draw::{DrawScale, Theme, Instrument};
 
 /// Generate scales svg
 fn main() -> std::io::Result<()> {
@@ -33,7 +33,7 @@ fn note(note: &str) -> std::io::Result<()> {
         }
     }).collect();
     for v_s in vec_scale {
-        let draw: DrawScale = DrawScale::new(v_s, Theme::Light);
+        let draw: DrawScale = DrawScale::new(v_s, Theme::Light(Instrument::Guitar));
 
         let svg = format!("{}",draw.draw_base_vertical());
         let mut buffer = File::create(format!("temp_scales_svg/scale_v_light_{}_{}.svg", v_s.scale_type.get_name_short(), &tonic.data_name()))?;
@@ -43,7 +43,7 @@ fn note(note: &str) -> std::io::Result<()> {
         let mut buffer = File::create(format!("temp_scales_svg/scale_h_light_{}_{}.svg", v_s.scale_type.get_name_short(), &tonic.data_name()))?;
         buffer.write_all(&svg.as_bytes())?;
 
-        let draw: DrawScale = DrawScale::new(v_s, Theme::Dark);
+        let draw: DrawScale = DrawScale::new(v_s, Theme::Dark(Instrument::Guitar));
 
         let svg = format!("{}",draw.draw_base_vertical());
         let mut buffer = File::create(format!("temp_scales_svg/scale_v_dark_{}_{}.svg", v_s.scale_type.get_name_short(), &tonic.data_name()))?;

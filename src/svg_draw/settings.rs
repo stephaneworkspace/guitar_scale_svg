@@ -1,4 +1,5 @@
 use std::str::FromStr;
+use crate::svg_draw::settings::Instrument::Guitar;
 
 /// Custom error for strings that cannot be parsed into chords.
 #[derive(Debug)]
@@ -8,8 +9,14 @@ pub struct ParseThemeError {
 
 #[derive(Clone)]
 pub enum Theme {
-    Light,
-    Dark,
+    Light(Instrument),
+    Dark(Instrument),
+}
+
+#[derive(Clone)]
+pub enum Instrument {
+    Guitar,
+    Piano,
 }
 
 impl FromStr for Theme {
@@ -20,12 +27,10 @@ impl FromStr for Theme {
 
         let name = s.to_string();
 
-        if s == "L" {
-            Ok(Light)
-        } else if s == "D" {
-            Ok(Dark)
-        } else {
-            Err(ParseThemeError { name })
+        match s {
+            "L" => Ok(Light(Guitar)),
+            "D" => Ok(Dark(Guitar)),
+            _ => Err(ParseThemeError { name })
         }
     }
 }
